@@ -85,3 +85,17 @@ For a recommendation and tradeoffs (AGPL vs permissive dual licensing), see:
 
 - [Architecture and boot graphs](docs/architecture-graph.md)
 - [Architecture picture (SVG)](docs/architecture-diagram.svg)
+
+- ## Third-party notices
+
+### Limine
+
+RustyKernel uses the Limine bootloader / Limine boot protocol.
+
+Limine is licensed under the BSD 2-Clause License.
+
+Copyright (C) 2019-2025 mintsuki and contributors.
+
+If a release artifact includes Limine binaries such as `BOOTX64.EFI`,
+the Limine BSD 2-Clause license text and disclaimer must be included
+with that artifact.
