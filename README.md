@@ -79,3 +79,7 @@ This repository currently includes an `AGPL-3.0` license file.
 
 For a recommendation and tradeoffs (AGPL vs permissive dual licensing), see:
 - [docs/license-recommendation.md](docs/license-recommendation.md)
+
+## Graphs
+
+- [Architecture and boot graphs](docs/architecture-graph.md)
