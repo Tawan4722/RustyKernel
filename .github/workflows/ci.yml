@@ -1,0 +1,18 @@
+name: kernel-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Build host tooling
+        run: cargo check -p boot
+      - name: Build kernel
+        run: cargo build --release -p kernel --target targets/x86_64-kernel.json
+      - name: Build user smoke
+        run: cargo build --release -p user-smoke --target targets/x86_64-user.json

@@ -1,0 +1,23 @@
+[build]
+target-dir = "target"
+
+[alias]
+boot-build = "run -p boot -- build"
+run-qemu = "run -p boot -- run-qemu"
+run-qemu-debug = "run -p boot -- run-qemu-debug"
+run-hardware-artifact = "run -p boot -- run-hardware-artifact"
+
+[target.x86_64-kernel]
+rustflags = [
+    "-C", "relocation-model=static",
+    "-C", "code-model=kernel",
+    "-C", "link-arg=-Tlinker/kernel.ld",
+    "-C", "link-arg=-zmax-page-size=0x1000",
+]
+
+[target.x86_64-user]
+rustflags = [
+    "-C", "relocation-model=static",
+    "-C", "link-arg=-Tlinker/user.ld",
+    "-C", "link-arg=-zmax-page-size=0x1000",
+]

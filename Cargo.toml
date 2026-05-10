@@ -1,0 +1,30 @@
+[workspace]
+members = [
+    "crates/boot",
+    "crates/kernel",
+    "crates/user-smoke",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+license = "AGPL-3.0-only"
+authors = ["Tawan4722"]
+
+[workspace.dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.50", features = ["derive"] }
+limine = "0.5.0"
+x86_64 = { version = "0.15.4", default-features = false, features = ["instructions", "abi_x86_interrupt"] }
+spin = "0.10.0"
+uart_16550 = "0.4.0"
+pic8259 = "0.11.0"
+linked_list_allocator = "0.10.5"
+lazy_static = { version = "1.5.0", features = ["spin_no_std"] }
+xmas-elf = "0.10.0"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
