@@ -1,5 +1,7 @@
 # Rust x86_64 UEFI Research Kernel (Limine)
 
+This is RustKernel Expirement By openAI codex.
+
 This repository contains a kernel-first research OS baseline:
 
 - Limine boot protocol on `x86_64` + UEFI
@@ -12,7 +14,6 @@ This repository contains a kernel-first research OS baseline:
 ## Credits
 
 - Project owner and lead maintainer: **Tawan4722** ([RustyKernel](https://github.com/Tawan4722/RustyKernel))
-- Implementation support and scaffolding assistance: **OpenAI Codex**
 - Boot protocol/runtime foundations used by this project:
   - Limine boot protocol
   - Rust OS ecosystem crates (`x86_64`, `pic8259`, `uart_16550`, `linked_list_allocator`, `xmas-elf`)
