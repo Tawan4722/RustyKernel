@@ -83,3 +83,4 @@ For a recommendation and tradeoffs (AGPL vs permissive dual licensing), see:
 ## Graphs
 
 - [Architecture and boot graphs](docs/architecture-graph.md)
+- [Architecture picture (SVG)](docs/architecture-diagram.svg)

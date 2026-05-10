@@ -1,5 +1,9 @@
 # RustyKernel Graphs
 
+## Architecture Picture
+
+![RustyKernel Architecture](architecture-diagram.svg)
+
 ## High-Level Architecture
 
 ```mermaid
